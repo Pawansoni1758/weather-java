@@ -11,6 +11,10 @@
 
 </head>
 <body>
+<video autoplay muted loop id="bg-video">
+    <source src="images/sky.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
 
 	<div class="container">
 		<h1>Weather Details</h1>
