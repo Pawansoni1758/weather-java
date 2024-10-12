@@ -1,14 +1,14 @@
 
 document.getElementById('weatherForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent default form submission
+        event.preventDefault(); 
 
         var cityInput = document.getElementById('city');
         var errorMsg = document.getElementById('errorMsg');
 
         if (cityInput.value.trim() === '') {
-            errorMsg.style.display = 'block'; // Show error message
+            errorMsg.style.display = 'block'; 
         } else {
-            errorMsg.style.display = 'none'; // Hide error message
-            this.submit(); // Submit the form
+            errorMsg.style.display = 'none'; 
+            this.submit(); 
         }
     });

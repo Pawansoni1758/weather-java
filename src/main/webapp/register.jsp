@@ -13,84 +13,84 @@
             }
             .hero, .footer{
                 height: 70px;
-                /*border: 2px solid black;*/
+             
             }
             #bg-video {
-		    position: fixed;   /* Stays fixed even if the page scrolls */
+		    position: fixed;   
 		    top: 0;
 		    left: 0;
-		    min-width: 100%;   /* Ensure the video covers the width */
-		    min-height: 100%;  /* Ensure the video covers the height */
-		    z-index: -1;       /* Sends the video behind other content */
-		    object-fit: cover; /* Ensures the video scales properly without distortion */
+		    min-width: 100%;   
+		    min-height: 100%;  
+		    z-index: -1;       
+		    object-fit: cover; 
 			}
 			
 			body {
-  display: flex; /* Makes the body a flex container for vertical centering */
-  align-items: center; /* Vertically centers the .container element */
-  min-height: 100vh; /* Ensures the body fills the viewport height */
-  margin: 0; /* Removes default body margins */
-  font-family: sans-serif; /* Sets a default font family */
-  justify-content:center;
-}
-
-.container {
-  border: none; /* Removes unnecessary border */
-  width: 400px; /* Adjust width as needed */
-  background-color: rgba(255, 255, 255, 0.2); /* White background with some opacity */
-  padding: 20px; /* Adds some padding for spacing */
-  border-radius: 5px; /* Adds rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-}
-
-.login-header, .footer {
-  height: 70px; /* Adjust height as needed */
-}
-
-#bg-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1; /* Sends the video behind other content */
-  object-fit: cover;
-}
-
-form {
-  display: flex; /* Makes form elements flexible for better layout */
-  flex-direction: column;
-}
-
-form label { /* Add labels for accessibility and clarity (optional) */
-  display: block;
-  margin-bottom: 5px;
-}
-
-input[type="text"], input[type="email"], input[type="number"], input[type="password"] {
-  padding: 10px;
-  border: 1px solid #ccc;
-  margin-bottom: 10px;
-}
-
-input[type="submit"] {
-  background-color: #08c2ff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  border-radius: 3px;
-}
-
-a {
-  color: #08c2ff;
-  text-decoration: none; /* Removes underline from link */
-}
-
-.hero h1 {
-  font-size: 36px; /* Adjust heading size as needed */
-  margin-bottom: 20px; /* Adds space between heading and form */
-}
+			  display: flex; 
+			  align-items: center; 
+			  min-height: 100vh; 
+			  margin: 0; 
+			  font-family: sans-serif; 
+			  justify-content:center;
+			}
+			
+			.container {
+			  border: none; 
+			  width: 400px; 
+			  background-color: rgba(255, 255, 255, 0.2); 
+			  padding: 20px; 
+			  border-radius: 5px; 
+			  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+			}
+			
+			.login-header, .footer {
+			  height: 70px; 
+			}
+			
+			#bg-video {
+			  position: fixed;
+			  top: 0;
+			  left: 0;
+			  min-width: 100%;
+			  min-height: 100%;
+			  z-index: -1; 
+			  object-fit: cover;
+			}
+			
+			form {
+			  display: flex; 
+			  flex-direction: column;
+			}
+			
+			form label { 
+			  display: block;
+			  margin-bottom: 5px;
+			}
+			
+			input[type="text"], input[type="email"], input[type="number"], input[type="password"] {
+			  padding: 10px;
+			  border: 1px solid #ccc;
+			  margin-bottom: 10px;
+			}
+			
+			input[type="submit"] {
+			  background-color: #08c2ff;
+			  color: white;
+			  padding: 10px 20px;
+			  border: none;
+			  cursor: pointer;
+			  border-radius: 3px;
+			}
+			
+			a {
+			  color: #08c2ff;
+			  text-decoration: none;
+			}
+			
+			.hero h1 {
+			  font-size: 36px; 
+			  margin-bottom: 20px; 
+			}
         </style>
     </head>
     <body>
@@ -108,10 +108,7 @@ a {
                 <input type="email" name="email" required>
                 <br>
                 
-                <!-- 
-                Username:
-                <input type="tetx" name="uname" required>
-                <br>-->
+                
                 
                 Password:
                 <input type="password" name="pwd" required>
@@ -127,10 +124,6 @@ a {
                 Already have an account
                 <a href="login.jsp">Click here</a>
             </form>
-            <!-- <div class="footer">
-                <p>Copyright @ BestBooks</p>
-                <p>pawan2004soni@gmail.com</p>
-            </div>-->
         </div>
         <%
             if(request.getParameter("email")!=null){
@@ -146,7 +139,7 @@ a {
             String sql= "insert into reg values('"+email+"', '"+uname+"', '"+pwd+"', '"+name+"', '"+num2+"')";
             Statement smt=con.prepareStatement(sql);
             smt.executeUpdate(sql);
-            out.println("Register Successfully");
+            
             };
         %>
     </body>

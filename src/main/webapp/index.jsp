@@ -74,11 +74,4 @@
 	
 	<script src="script.js"></script>
 </body>
-<!--
-<footer>
-	<div class="footer-container">
-		<p>Developed by Pawan Kumar @ 2024 | Dynamic Web Project</p>
-	</div>
-</footer>
--->
 </html>

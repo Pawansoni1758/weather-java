@@ -28,9 +28,9 @@
             <h1>Contact Us!</h1>
         </div>
         <br>
-        <form action="contactus.jsp" method="post">
+        <form action="https://formsubmit.co/pawan2004soni@gmail.com" method="post">
             UserName:
-            <input type="text" name="uname" required>
+            <input type="text" name="name" required>
             <br>
             Email:
             <input type="email" name="email" required >
@@ -39,7 +39,7 @@
             <input type="text" name="subject" required>
             <br>
             Message:
-            <textarea rows="5" cols="5" required></textarea>
+            <textarea rows="5" cols="5" required name="message"></textarea>
             <br>
             
             <input type="submit" value="Send">

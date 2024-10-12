@@ -6,26 +6,26 @@
     <style>
 
 		body {
-		  display: flex; /* Makes the body a flex container for vertical centering */
-		  align-items: center; /* Vertically centers the .maincont element */
-		  min-height: 100vh; /* Ensures the body fills the viewport height */
-		  margin: 0; /* Removes default body margins */
-		  font-family: sans-serif; /* Sets a default font family */
+		  display: flex; 
+		  align-items: center; 
+		  min-height: 100vh; 
+		  margin: 0; 
+		  font-family: sans-serif; 
 		  justify-content: center;
 		}
 		
 		.container {
-		  border: none; /* Removes unnecessary border */
-		  width: 400px; /* Adjust width as needed */
-		  background-color: rgba(255, 255, 255, 0.2); /* White background with some opacity */
-		  padding: 20px; /* Adds some padding for spacing */
-		  border-radius: 5px; /* Adds rounded corners */
-		  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+		  border: none; 
+		  width: 400px; 
+		  background-color: rgba(255, 255, 255, 0.2); 
+		  padding: 20px;
+		  border-radius: 5px; 
+		  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
 		  text-align:center;
 		}
 		
 		.login-header, .footer {
-		  height: 70px; /* Adjust height as needed */
+		  height: 70px; 
 		}
 		
 		#bg-video {
@@ -34,28 +34,28 @@
 		  left: 0;
 		  min-width: 100%;
 		  min-height: 100%;
-		  z-index: -1; /* Sends the video behind other content */
+		  z-index: -1; 
 		  object-fit: cover;
 		}
 		
 		.maincont {
 		  display: flex;
-		  flex-direction: column; /* Makes content within .maincont vertical */
-		  align-items: center; /* Horizontally centers content within .maincont */
+		  flex-direction: column; 
+		  align-items: center; 
 		  justify-content: center;
 		}
 		
 		h1 {
 		  font-size: 36px;
-		  margin-bottom: 20px; /* Adds space between heading and form */
+		  margin-bottom: 20px; 
 		}
 		
 		form {
-		  display: flex; /* Makes form elements flexible for better layout */
+		  display: flex; 
 		  flex-direction: column;
 		}
 		
-		form label { /* Add labels for accessibility and clarity (optional) */
+		form label {
 		  display: block;
 		  margin-bottom: 5px;
 		}
@@ -77,7 +77,7 @@
 		
 		a {
 		  color: #08c2ff;
-		  text-decoration: none; /* Removes underline from link */
+		  text-decoration: none; 
 		}
 		
     </style>
