@@ -17,7 +17,7 @@
 		.container {
 		  border: none; /* Removes unnecessary border */
 		  width: 400px; /* Adjust width as needed */
-		  background-color: rgba(255, 255, 255, 0.8); /* White background with some opacity */
+		  background-color: rgba(255, 255, 255, 0.2); /* White background with some opacity */
 		  padding: 20px; /* Adds some padding for spacing */
 		  border-radius: 5px; /* Adds rounded corners */
 		  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */

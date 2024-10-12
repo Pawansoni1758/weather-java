@@ -11,16 +11,21 @@
 
 </head>
 <body>
+
 <video autoplay muted loop id="bg-video">
     <source src="images/sky.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
-
+	<div class="nav">
+		<button><a href="register.jsp" style="text-decoration:none;color:white;">Signout</a></button>
+		<button><a href="contactus.jsp" style="text-decoration:none;color:white;">Contact Us</a></button>
+	</div>
+	<div class="maincont">
 	<div class="container">
 		<h1>Weather Details</h1>
 
 		<div class="weather-image-container">
-			<img id="weather-icon" src="images/img1.png" alt="Weather Image">
+			 <img id="weather-icon" src="images/img1.png" alt="Weather Image">
 			<div class="temp-city">
 				<h2>
 					<i class="fas fa-city"></i> ${city}
@@ -52,26 +57,28 @@
 			</p>
 		</div>
 
-		<div class="container">
+		<div class="container2">
 			<h2>Find Other Places Weather</h2>
 			<form id="weatherForm" action="MyServlet" method="post">
 				<input type="text" id="city" name="city"
 					placeholder="E.g., Kathmandu, New York, London">
 				<button type="submit">Get Weather</button>
 				<p id="errorMsg"
-					style="color: red; padding: 6px 6px; display: none;">Please
+					style="color: red;  display: none;">Please
 					enter the name of the place.</p>
 
 			</form>
 		</div>
 	</div>
-
+	</div>
+	
 	<script src="script.js"></script>
 </body>
-
+<!--
 <footer>
 	<div class="footer-container">
 		<p>Developed by Pawan Kumar @ 2024 | Dynamic Web Project</p>
 	</div>
 </footer>
+-->
 </html>

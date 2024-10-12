@@ -1,0 +1,10 @@
+@charset "UTF-8";
+#bg-video {
+    position: fixed;   /* Stays fixed even if the page scrolls */
+    top: 0;
+    left: 0;
+    min-width: 100%;   /* Ensure the video covers the width */
+    min-height: 100%;  /* Ensure the video covers the height */
+    z-index: -1;       /* Sends the video behind other content */
+    object-fit: cover; /* Ensures the video scales properly without distortion */
+}
