@@ -64,7 +64,7 @@
 					placeholder="E.g., Kathmandu, New York, London">
 				<button type="submit">Get Weather</button>
 				<p id="errorMsg"
-					style="color: red;  display: none;">Please
+					style="color: red;  display: none;margin-top:3px;	">Please
 					enter the name of the place.</p>
 
 			</form>

@@ -8,3 +8,115 @@
     z-index: -1;       /* Sends the video behind other content */
     object-fit: cover; /* Ensures the video scales properly without distortion */
 }
+
+body {
+		  /* Vertically centers the .maincont element */
+		  min-height: 100vh; /* Ensures the body fills the viewport height */
+		  margin: 0; /* Removes default body margins */
+		  font-family: sans-serif; /* Sets a default font family */
+		  
+		}
+		.nav{
+			display:flex;
+			align-items:center;
+			justify-content:center;
+		}
+		.nav a{
+			color:white;
+			}
+		
+		.container {
+		  border: none; /* Removes unnecessary border */
+		  width: 400px; /* Adjust width as needed */
+		  background-color: rgba(255, 255, 255, 0.2); /* White background with some opacity */
+		  padding: 20px; /* Adds some padding for spacing */
+		  border-radius: 15px; /* Adds rounded corners */
+		  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+		  text-align:center;
+		}
+		
+		.login-header, .footer {
+		  height: 70px; /* Adjust height as needed */
+		}
+		
+		#bg-video {
+		  position: fixed;
+		  top: 0;
+		  left: 0;
+		  min-width: 100%;
+		  min-height: 100%;
+		  z-index: -1; /* Sends the video behind other content */
+		  object-fit: cover;
+		}
+		
+		.maincont {
+		  display: flex;
+		  flex-direction: column; /* Makes content within .maincont vertical */
+		  align-items: center; /* Horizontally centers content within .maincont */
+		  justify-content: center;
+		}
+		
+		h1 {
+		  font-size: 36px;
+		  margin-bottom: 20px; /* Adds space between heading and form */
+		}
+		
+		form {
+		  display: flex; /* Makes form elements flexible for better layout */
+		  flex-direction: column;
+		}
+		
+		form label { /* Add labels for accessibility and clarity (optional) */
+		  display: block;
+		  margin-bottom: 5px;
+		}
+		
+		input[type="text"], input[type="password"], input[type="email"] {
+		  padding: 10px;
+		  border: 1px solid #ccc;
+		  margin-bottom: 10px;
+		}
+		
+		input[type="submit"] {
+		  background-color: #08c2ff;
+		  color: white;
+		  padding: 10px 20px;
+		  border: none;
+		  cursor: pointer;
+		  border-radius: 3px;
+		  font-size:15px;
+		}
+		
+		a {
+		  color: #08c2ff;
+		  text-decoration: none; /* Removes underline from link */
+		}
+		button {
+			margin: 10px 12px;
+		    padding: 10px 20px;
+		    background-color: #08c2ff;
+		    color: white;
+		    border: none;
+		    border-radius: 5px;
+		    cursor: pointer;
+		    font-size:15px;
+		}
+		
+		footer {
+	    text-align: center;
+	    margin:0;
+	    font-size: 14px;
+	    padding: 16px 20px;
+		}
+		
+		footer p {
+		    margin: 0;
+		    color: black;
+		}
+		
+		.footer-container {
+			background-color: rgba(255, 255, 255, 0.2); /* Darken the container background */
+		    padding: 20px;
+		    border-radius: 10px;
+		    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		}
